@@ -1,2 +1,2 @@
 # database
-This  Repository contains FAQs on Databases 
+This  Repository contains FAQs on Databases and SQL

@@ -1,0 +1,9 @@
+# Write your MySQL query statement below
+
+
+select emp.name 
+from employee emp
+join (select count(managerid) as reports_count , managerid 
+from employee 
+group by managerid 
+having count(managerid) > 4) mgr_rpt on emp.id = mgr_rpt.managerid
